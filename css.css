@@ -2,17 +2,26 @@
   margin:0;
   padding:0;
 }
-.box{
-  border:1px solid red;
-}
 .btns{
-  background-color: #ffdabb;
   text-align: center;
+  background-color: #fff;
+  color:#000;
 }
 .btns button{
+  border:1px solid #9cc6d9;
   padding:8pt 22pt;
   margin:20pt 30pt;
   border-radius: 50px;
+}
+.btn1{
+  background-color: #9cc6d9;
+}
+.btn2{
+  background-color: transparent;
+}
+.box{
+  border:1px solid red;
+  background: #fff;
 }
 .company{
 
@@ -36,7 +45,7 @@
 .com_content p{
   display: block;
   margin-bottom:10px;
-  color:#333;
+  color:#666;
   font-size:12pt;
   text-align: justify;
 }
@@ -76,11 +85,13 @@
   font-size:12pt;
   display: none;
   padding:30px 0;
+  background-color: #dbdbdb;
 }
 .team_content p{
   display: block;
   width: 80%;
   margin:0 auto;
+  color:#666;
 }
 
 @media all and (max-width:992px) {

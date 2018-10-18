@@ -7,9 +7,9 @@
   <link href="css.css" type="text/css" rel="stylesheet" />
 </head>
 <body>
-  <div class="btns">
+  <div class="btns" id="btns">
     <button type="button" class="btn btn-default btn1" id="btn1">公司介绍</button>
-    <button type="button" class="btn btn-default btn1" id="btn2">团队介绍</button>
+    <button type="button" class="btn btn-default btn2" id="btn2">团队介绍</button>
   </div>
   <div class="container-fluid box">
     <div class="row company" id="company" style="display:block;">
@@ -26,7 +26,13 @@
     </div>
     <div class="row team" id="team" style="display:none;">
       <div class="col-sm-12 col-md-12 team_pic">
-        <img src="img/team.jpg" />
+        <picture>
+          <source srcset="img/team_500.jpg" media="(max-width:500px)" />
+          <source srcset="img/team_800.jpg" media="(max-width:800px)" />
+          <source srcset="img/team_1200.jpg" media="(max-width:1200px)" />
+          <source srcset="img/team_1600.jpg" media="(max-width:1600px)" />
+          <img src="img/team.jpg" />
+        </picture>
         <div class="pic_mask"></div>
         <p>团队成员来自帝国理工学院、苏黎世理工学院、香港科技大学、清华大学、哈尔滨工业大学等国内外知名学府，专业涉及机器人控制、机械设计、结构仿真、工程力学、工业设计、医学分析等多个领域。 </p>
       </div>
