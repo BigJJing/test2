@@ -4,6 +4,8 @@ $(function(){
     $("#team").css("display","none");
     $("#btn1").css("backgroundColor","#9cc6d9");
     $("#btn2").css("backgroundColor","transparent");
+    $("#btn1").css("color","#fff");
+    $("#btn2").css("color","#666");
     $("#btns").css("backgroundColor","#fff");
   })
   $("#btn2").click(function(){
@@ -11,6 +13,8 @@ $(function(){
     $("#team").css("display","block");
     $("#btn2").css("backgroundColor","#9cc6d9");
     $("#btn1").css("backgroundColor","transparent");
+    $("#btn2").css("color","#fff");
+    $("#btn1").css("color","#666");
     if($("#team_add").css("display")=="none"){
         $("#btns").css("backgroundColor","#98999c");
     }
