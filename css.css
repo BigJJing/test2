@@ -18,7 +18,6 @@
 
 }
 .com_pic{
-  height: 400px;
   line-height: 400px;
   text-align: right;
 }
@@ -27,9 +26,8 @@
   margin-right:20px;
 }
 .com_content{
-  height: 400px;
-  padding:0 10px;
-  padding-top:20pt;
+  padding:20pt 10px;
+  padding-bottom:40pt;
 }
 .com_content div{
   width: 400px;
@@ -37,7 +35,6 @@
 }
 .com_content p{
   display: block;
-  border:1px solid red;
   margin-bottom:10px;
   color:#333;
   font-size:12pt;
@@ -48,14 +45,35 @@
 .team_pic{
   background-color: #ccc;
   padding:0px;
+  position: relative;
 }
 .team_pic img{
   max-width: 100%;
   width: 100%;
 }
+.team_pic .pic_mask{
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left:0px;
+  top:0px;
+  background-color: rgba(34,36,43,.35);
+}
+.team_pic p{
+  text-align: center;
+  color:#fff;
+  display: block;
+  position: absolute;
+  top:50%;
+  left:50%;
+  -webkit-transform: translate(-50%,-50%);
+  -moz-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+}
 .team_content{
   font-size:12pt;
-  height:200px;
   display: none;
   padding:30px 0;
 }
@@ -80,6 +98,12 @@
   }
   .com_content div{
     width: 100%;
+  }
+  .team_pic .pic_mask{
+    display: none;
+  }
+  .team_pic p{
+    display: none;
   }
 
 }
