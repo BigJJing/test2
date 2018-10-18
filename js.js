@@ -1,0 +1,10 @@
+$(function(){
+  $("#btn1").click(function(){
+    $("#company").css("display","block");
+    $("#team").css("display","none");
+  })
+  $("#btn2").click(function(){
+    $("#company").css("display","none");
+    $("#team").css("display","block");
+  })
+})

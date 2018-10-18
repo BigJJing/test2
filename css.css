@@ -1,0 +1,41 @@
+*{
+  margin:0;
+  padding:0;
+}
+.box{
+  background: #ccc;
+}
+.btns{
+  background-color: #ffdabb;
+  text-align: center;
+}
+.btns button{
+  padding:8pt 22pt;
+  margin:20pt 30pt;
+  border-radius: 50px;
+}
+.com_pic{
+  height: 500px;
+  background-color:#b5ebf5;
+}
+.com_content{
+  height: 500px;
+  background-color: #ffbbbd;
+}
+.team{
+  background-color: #b0c6f0;
+}
+.team_pic{
+  height: 500px;
+  background-color: #ccc;
+}
+.team_content{
+  height:200px;
+  background-color: #666;
+  display: none;
+}
+@media all and (max-width:992px) {
+  .team_content{
+    display: block;
+  }
+}
